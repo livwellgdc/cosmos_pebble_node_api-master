@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "pebble_api_staging",
+      "script": "src/index.js",
+      "instances": "1",
+      "autorestart": true,
+      "watch": false,
+      "exec_mode":"fork",
+      "time": true,
+      "env": {
+        "PORT":4001,
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}
